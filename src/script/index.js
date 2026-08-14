@@ -1,0 +1,1 @@
+const btnMain = document.getElementById();

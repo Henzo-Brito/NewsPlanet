@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Calibri;
+    transition: transform .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-sizing: border-box;
+}
+
+:root{
+    --color1: rgb(87, 29, 232);
+    --color2: rgb(251, 206, 28);
+    --color3: rgb(24, 24, 24);
+    --color4: rgb(30, 30, 30);
+    --color5: rgb(251, 249, 255);
+}
+
+body{
+    background-color: var(--color4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color5);
+    flex-direction: column;
+}
+
+header{
+    background-color: var(--color3);
+    width: 100%;
+    display: flex;
+    padding-inline: 20px;
+    position: fixed;
+    align-items: center;
+    top: 0;
+    height: clamp(85px,5dvw,110px);
+
+    & p:hover, & i:hover{
+        cursor: pointer;
+        transform: scale(1.02);
+    }
+
+    p{
+        font-size: clamp(20px,3dvw, 32px);
+        font-weight: bold;
+    }
+
+    & .logotipo{
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        width: 20%;
+
+        & p{
+            font-size: clamp(30px,3dvw, 37px);
+            font-weight: 900;
+        }
+
+        & img{
+            width: clamp(60px,10%,90px);
+        }
+        & img:hover{
+            transform: rotate(8deg);
+        }
+    }
+    .btnMenu{
+        font-size: clamp(26px,3dvw, 32px);
+    }
+
+    & .right{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        justify-content: end;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    .logotipo{
+        & p{
+            display: none;
+        }
+    }
+}
+
+
+main{
+    width: 100dvw;
+}
+
+.navBar{
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    right: -10px;
+    top: calc(clamp(85px,5dvw,110px) + 15px);
+    height: calc(100dvh - clamp(85px,5dvw,110px) - 30px);
+    background-color: var(--color3);
+    width: 25dvw;
+    border-radius: 10px;
+
+    transition: all .5s cubic-bezier(0.215, 0.610, 0.355, 1);
+
+    & h1{
+        margin: 20px;
+    }
+
+    & .btn{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        padding: 20px;
+        cursor: pointer;
+        & p{
+            font-size: clamp(20px,3dvw, 25px);
+        }
+        & img{
+            width: clamp(35px,3dvw, 45px);
+        }
+    }
+    & .btn:hover{
+        background-color: rgba(141, 3, 255, 0.673);
+    }
+}
+
+.navBar.active {
+    opacity: 1;
+    right: 15px;
+    visibility: visible;
+}
+
+#menuBtn{
+    transition: all .5s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+#menuBtn.active {
+    transform: rotate(90deg);
+}
