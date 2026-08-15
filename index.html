@@ -10,6 +10,7 @@
     <meta name="robot" content="5">
     <title>NewsPlanet</title>
     <meta name="robot" content="index">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-ico" href="/src/imgs/logo.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script type="module" src="./src/script/btns.js"></script>
@@ -27,8 +28,8 @@
             <p>Sobre Nós</p>
             
             <div class="searchBar">
-                <i class="fa fa-search"></i>
-                <input type="text" placeholder="matérias">
+                <label for="search"><i class="fa fa-search"></i></label>
+                <input type="text" name="search" placeholder="matérias">
             </div>
             <i id="btnTheme" class="fa-solid fa-sun"></i>
     
@@ -68,7 +69,111 @@
                 </div>
             </div>
         </section>
-        <section></section>
+        <div class="header">
+            <h1>Outras Notícias</h1>
+            <a href="">Ver todas <i class="fa-solid fa-angle-right"></i><a>
+        </div>
+        <section class="article-group">
+            <a href="" class="article">
+                <img src="./src/imgs/artigos/1.png" class="article-img" alt="">
+                <h3 class="title">Lorem, ipsum  consectetur adipisicing elit. Iusto quae, impedit unde. Commodi recusandae.</h3>
+                <div class="authors">
+                    <div class="images">
+                        <img src="./src/imgs/authors/1.png" alt="">
+                        <img src="./src/imgs/authors/2.png" alt="">
+                    </div>
+                    <p class="name">Henzo, Minecraft</p>
+                    <p class="time">
+                        <i class="fa-solid fa-clock"></i>
+                        14/08/2026
+                    </p>
+                </div>
+            </a>
+            <a href="" class="article">
+                <img src="./src/imgs/artigos/1.png" class="article-img" alt="">
+                <h3 class="title">Lorem, ipsum  consectetur adipisicing elit. Iusto quae, impedit unde. Commodi recusandae.</h3>
+                <div class="authors">
+                    <div class="images">
+                        <img src="./src/imgs/authors/1.png" alt="">
+                        <img src="./src/imgs/authors/2.png" alt="">
+                    </div>
+                    <p class="name">Henzo, Minecraft</p>
+                    <p class="time">
+                        <i class="fa-solid fa-clock"></i>
+                        14/08/2026
+                    </p>
+                </div>
+            </a>
+            <a href="" class="article">
+                <img src="./src/imgs/artigos/1.png" class="article-img" alt="">
+                <h3 class="title">Lorem, ipsum  consectetur adipisicing elit. Iusto quae, impedit unde. Commodi recusandae.</h3>
+                <div class="authors">
+                    <div class="images">
+                        <img src="./src/imgs/authors/1.png" alt="">
+                        <img src="./src/imgs/authors/2.png" alt="">
+                    </div>
+                    <p class="name">Henzo, Minecraft</p>
+                    <p class="time">
+                        <i class="fa-solid fa-clock"></i>
+                        14/08/2026
+                    </p>
+                </div>
+            </a>
+            <a href="" class="article">
+                <img src="./src/imgs/artigos/1.png" class="article-img" alt="">
+                <h3 class="title">Lorem, ipsum  consectetur adipisicing elit. Iusto quae, impedit unde. Commodi recusandae.</h3>
+                <div class="authors">
+                    <div class="images">
+                        <img src="./src/imgs/authors/1.png" alt="">
+                        <img src="./src/imgs/authors/2.png" alt="">
+                    </div>
+                    <p class="name">Henzo, Minecraft</p>
+                    <p class="time">
+                        <i class="fa-solid fa-clock"></i>
+                        14/08/2026
+                    </p>
+                </div>
+            </a>
+        </section>
+
+        <section class="newsLetter">
+            <div class="description">
+                <h1>PlanetsLetter</h1>
+                <p>
+                    Receba Notificações de notícias assim que elas sairem, e esteja atualizado sobre as notícias do mundo tecnológico.
+                </p>
+                <div class="contacts">
+                    <a class="contact telephone">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <div class="">
+                            <h3>Whatsapp:</h3>
+                            <p>(11) 98705-1565</p>
+                        </div>
+                    </a>
+                    <a class="contact telephone">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div class="">
+                            <h3>E-mail:</h3>
+                            <p>(11) 98705-1565</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <form action="post">
+                <label for="name">Nome:</label>
+                <input type="text" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" name="email" required>
+                
+                <div class="">
+                    <input type="submit">
+                    <div class="">
+                        <input type="radio">
+                        <p>Li e concordo com todos os Termos de Serviços e Política de Privacidade</p>
+                    </div>
+                </div>
+            </form>
+        </section>
     </main>
 </body>
 
@@ -95,23 +200,27 @@
 
 <footer>
     <div class="top">
-        <img src="./src/imgs/logo.png" alt="logo">
+        <img src="./src/imgs/logo.ico" alt="logo">
         <div class="right">
             <h1 class="title">NewsPlanet</h1>
             <div class="links">
                 <div style="display: grid;">
                     <a href="">Sobre Nós</a>
+                </div>
+                <div style="display: grid;">
                     <a href="">Contato</a>
                 </div>
                 <div style="display: grid;">
                     <a href="">Termos de Serviço</a>
+                </div>
+                <div style="display: grid;">
                     <a href="">Política de Privacidade</a>
                 </div>
             </div>
         </div>
     </div>
     <div class="bottom">
-        <p>© Coryright NewsPlanet</p>
+        <p>© Copyright NewsPlanet</p>
         <a href="#topper">Voltar <i class="fa-solid fa-circle-arrow-up"></i></a>
     </div>
 
