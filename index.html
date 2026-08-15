@@ -17,10 +17,10 @@
 <body>
     <header>
         <i id="menuBtn" class="btnMenu fa-solid fa-bars"></i>
-        <div class="logotipo">
+        <a class="logotipo" href="#topper">
             <img src="./src/imgs/logo.png" alt="imagem da marca de logo">
             <p>NewsPlanet</p>
-        </div>
+        </a>
 
         <div class="right">
             
@@ -28,7 +28,7 @@
             
             <div class="searchBar">
                 <i class="fa fa-search"></i>
-                <input type="text">
+                <input type="text" placeholder="matérias">
             </div>
             <i id="btnTheme" class="fa-solid fa-sun"></i>
     
@@ -36,7 +36,7 @@
     </header>
 
     <main>
-        <section class="topper">
+        <section class="topper" id="topper">
             <div class="left">
                 <img src="./src/imgs/artigos/1.png" class="article-img" alt="Meme de um programador de java zoando uma pessoa de python">
                 <div class="authors">
@@ -68,6 +68,7 @@
                 </div>
             </div>
         </section>
+        <section></section>
     </main>
 </body>
 
@@ -92,4 +93,29 @@
     </div>
 </div>
 
+<footer>
+    <div class="top">
+        <img src="./src/imgs/logo.png" alt="logo">
+        <div class="right">
+            <h1 class="title">NewsPlanet</h1>
+            <div class="links">
+                <div style="display: grid;">
+                    <a href="">Sobre Nós</a>
+                    <a href="">Contato</a>
+                </div>
+                <div style="display: grid;">
+                    <a href="">Termos de Serviço</a>
+                    <a href="">Política de Privacidade</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <p>© Coryright NewsPlanet</p>
+        <a href="#topper">Voltar <i class="fa-solid fa-circle-arrow-up"></i></a>
+    </div>
+
+</footer>
+
 </html>
+
