@@ -10,28 +10,64 @@
     <meta name="robot" content="5">
     <title>NewsPlanet</title>
     <meta name="robot" content="index">
-    <meta rel="shortcut icon" href="./src/imgs/logo.png" type="image/x-icon">
+    <link rel="icon" type="image/x-ico" href="/src/imgs/logo.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script type="module" src="./src/script/menuBtn.js"></script>
+    <script type="module" src="./src/script/btns.js"></script>
 </head>
 <body>
     <header>
+        <i id="menuBtn" class="btnMenu fa-solid fa-bars"></i>
         <div class="logotipo">
             <img src="./src/imgs/logo.png" alt="imagem da marca de logo">
             <p>NewsPlanet</p>
         </div>
 
         <div class="right">
+            
             <p>Sobre Nós</p>
             
-            <p>Name</p>
+            <div class="searchBar">
+                <i class="fa fa-search"></i>
+                <input type="text">
+            </div>
+            <i id="btnTheme" class="fa-solid fa-sun"></i>
     
-            <i id="menuBtn" class="btnMenu fa-solid fa-bars"></i>
         </div>
     </header>
 
     <main>
-        <h1>Name</h1>
+        <section class="topper">
+            <div class="left">
+                <img src="./src/imgs/artigos/1.png" class="article-img" alt="Meme de um programador de java zoando uma pessoa de python">
+                <div class="authors">
+                    <div class="images">
+                        <img src="./src/imgs/authors/1.png" alt="">
+                        <img src="./src/imgs/authors/2.png" alt="">
+                    </div>
+                    <p class="name">Henzo, Minecraft</p>
+                </div>
+            </div>
+            <div class="right">
+                <h1 class="title">10 Motivos do Por que Java é melhor que Python</h1>
+                <p class="description">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique dolor sunt, totam velit architecto at in rem. Qui quia similique temporibus, cupiditate optio magni molestiae accusamus quo asperiores cum mollitia.
+                </p>
+                <div class="buttons">
+                    <div class="btn share">
+                        <i class="fa-solid fa-share-nodes"></i>
+                    </div>
+                    <div class="btn visite">
+                        <p>Ver matéria</p>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+
+                    <p class="time">
+                        <i class="fa-solid fa-clock"></i>
+                        14/08/2026
+                    </p>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 
