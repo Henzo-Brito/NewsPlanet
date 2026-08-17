@@ -1,0 +1,5 @@
+#top{
+    width: 100%;
+    
+    margin-top: calc(clamp(85px,5dvw,110px) + 15px);
+}

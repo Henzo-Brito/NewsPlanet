@@ -36,4 +36,16 @@ btnTheme.addEventListener("click", () => {
     });
 });
 
+const copyEmail = document.getElementById("copyEmail");
 
+copyEmail.addEventListener("click",()=>{
+    const email = "seuemail@gmail.com";
+
+    navigator.clipboard.writeText(email)
+        .then(() => {
+            alert("E-mail copiado!");
+        })
+        .catch(() => {
+            alert("Não foi possível copiar o e-mail.");
+        });
+})

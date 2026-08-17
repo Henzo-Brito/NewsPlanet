@@ -49,7 +49,7 @@
                 </div>
             </div>
             <div class="right">
-                <h1 class="title">10 Motivos do Por que Java é melhor que Python</h1>
+                <h1 class="title">10 motivos pelos quais Java é melhor que Python</h1>
                 <p class="description">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique dolor sunt, totam velit architecto at in rem. Qui quia similique temporibus, cupiditate optio magni molestiae accusamus quo asperiores cum mollitia.
                 </p>
@@ -57,10 +57,10 @@
                     <div class="btn share">
                         <i class="fa-solid fa-share-nodes"></i>
                     </div>
-                    <div class="btn visite">
+                    <a href="./subjects/java.html" class="btn visite">
                         <p>Ver matéria</p>
                         <i class="fa-solid fa-angle-right"></i>
-                    </div>
+                    </a>
 
                     <p class="time">
                         <i class="fa-solid fa-clock"></i>
@@ -69,9 +69,12 @@
                 </div>
             </div>
         </section>
-        <div class="header">
+        <div id="tsection">
             <h1>Outras Notícias</h1>
-            <a href="">Ver todas <i class="fa-solid fa-angle-right"></i><a>
+            <a href=""> 
+                <p>Ver todas </p>
+                <i class="fa-solid fa-angle-right"></i>
+            <a>
         </div>
         <section class="article-group">
             <a href="" class="article">
@@ -121,7 +124,7 @@
             </a>
             <a href="" class="article">
                 <img src="./src/imgs/artigos/1.png" class="article-img" alt="">
-                <h3 class="title">Lorem, ipsum  consectetur adipisicing elit. Iusto quae, impedit unde. Commodi recusandae.</h3>
+                <h3 class="title">Tutorial de como centralizar uma Div</h3>
                 <div class="authors">
                     <div class="images">
                         <img src="./src/imgs/authors/1.png" alt="">
@@ -135,41 +138,50 @@
                 </div>
             </a>
         </section>
-
-        <section class="newsLetter">
+        <section class="newsLetter" id="newsLetter">
             <div class="description">
                 <h1>PlanetsLetter</h1>
                 <p>
                     Receba Notificações de notícias assim que elas sairem, e esteja atualizado sobre as notícias do mundo tecnológico.
                 </p>
                 <div class="contacts">
-                    <a class="contact telephone">
+                    <a 
+                        class="contact telephone" 
+                        href="https://wa.me/5511987051565" 
+                        target="_blank"
+                    >
                         <i class="fa-brands fa-whatsapp"></i>
-                        <div class="">
+                        <div>
                             <h3>Whatsapp:</h3>
                             <p>(11) 98705-1565</p>
                         </div>
                     </a>
-                    <a class="contact telephone">
+
+                    <a 
+                        class="contact email" 
+                        id="copyEmail"
+                        href="javascript:void(0)"
+                    >
                         <i class="fa-solid fa-envelope"></i>
-                        <div class="">
+                        <div>
                             <h3>E-mail:</h3>
-                            <p>(11) 98705-1565</p>
+                            <p>seuemail@gmail.com</p>
                         </div>
                     </a>
                 </div>
             </div>
             <form action="post">
+                <h1>Converse Conosco</h1>
                 <label for="name">Nome:</label>
                 <input type="text" name="name" required>
                 <label for="email">Email:</label>
                 <input type="email" name="email" required>
                 
-                <div class="">
+                <div class="bottom">
                     <input type="submit">
                     <div class="">
-                        <input type="radio">
-                        <p>Li e concordo com todos os Termos de Serviços e Política de Privacidade</p>
+                        <input type="radio" required>
+                        <p>Li e concordo com todos os <a href="">Termos de Serviços</a> e <a href="">Política de Privacidade</a></p>
                     </div>
                 </div>
             </form>
@@ -177,7 +189,7 @@
     </main>
 </body>
 
-<div class="navBar" id="navBar">
+<nav class="navBar" id="navBar">
     <h1>Principais Artigos</h1>
 
     <div class="btn id1">
@@ -196,19 +208,19 @@
         <img src="./src/imgs/logo.png" alt="">
         <p>Minecraft</p>
     </div>
-</div>
+</nav>
 
 <footer>
     <div class="top">
         <img src="./src/imgs/logo.ico" alt="logo">
         <div class="right">
             <h1 class="title">NewsPlanet</h1>
-            <div class="links">
+            <nav class="links">
                 <div style="display: grid;">
                     <a href="">Sobre Nós</a>
                 </div>
                 <div style="display: grid;">
-                    <a href="">Contato</a>
+                    <a href="index.html#newsLetter">Contato</a>
                 </div>
                 <div style="display: grid;">
                     <a href="">Termos de Serviço</a>
@@ -216,7 +228,7 @@
                 <div style="display: grid;">
                     <a href="">Política de Privacidade</a>
                 </div>
-            </div>
+            </nav>
         </div>
     </div>
     <div class="bottom">
