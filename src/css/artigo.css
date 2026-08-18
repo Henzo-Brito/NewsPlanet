@@ -13,10 +13,17 @@
         & img{
             border-radius: 50%;
             width: clamp(45px,5dvw,55px);
+            height: clamp(45px,5dvw,55px);
+
             border: 3px solid var(--color3);
             margin-left: calc(clamp(35px,5dvw,45px) / -2);
         }
     }
+}
+
+main img{
+    height: clamp(545px,40dvw,55px);
+    width: 50%;
 }
 
 .news-article{

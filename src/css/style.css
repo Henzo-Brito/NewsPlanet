@@ -172,6 +172,10 @@ main{
         & p{
             font-size: clamp(20px,3dvw, 25px);
             font-weight: 600;
+                        display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+            overflow: hidden;
         }
         & img{
             width: clamp(35px,3dvw, 45px);
@@ -224,6 +228,8 @@ main{
 
     & .article-img{
         width: clamp(300px,50dvw,500px);
+        height: clamp(300px,50dvw,500px);
+
         border-radius: 20px;
     }
 
