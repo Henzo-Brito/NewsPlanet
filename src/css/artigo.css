@@ -1,5 +1,51 @@
 #top{
     width: 100%;
-    
     margin-top: calc(clamp(85px,5dvw,110px) + 15px);
+    & .authors{
+        gap: 20px;
+        display: flex;
+        align-items: center;
+        margin:  20px 0;
+        font-size: clamp(15px,5dvw,20px);
+        margin-left: calc(clamp(35px,5dvw,45px) / 2);
+        color: var(--color2);
+        font-weight: 600;
+        & img{
+            border-radius: 50%;
+            width: clamp(45px,5dvw,55px);
+            border: 3px solid var(--color3);
+            margin-left: calc(clamp(35px,5dvw,45px) / -2);
+        }
+    }
+}
+
+.news-article{
+    & blockquote{
+        margin-block: 20px;
+        background-color: var(--color4);
+        font-size: clamp(15px,5dvw,20px);
+        padding: 20px;
+        border-radius: 20px;
+        width: 50%;
+        font-weight: 600;
+        &:hover{
+            transform: translateY(-5px);
+        }
+    }
+    & h2{
+        font-size: clamp(25px,5dvw, 32px);
+        
+    }
+    & p{
+        font-size: clamp(15px,5dvw,20px);
+        text-align: justify;
+        margin-block: 15px;
+    }
+    & ul{
+        margin-left: 20px;
+    }
+}
+
+footer{
+    margin-top: 60px;
 }

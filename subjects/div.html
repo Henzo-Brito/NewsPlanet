@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/css/style.css">
+    <meta name="keywords"  content="HTML, CSS, JavaScript">
+    <meta name="author"  content="Henzo Brito dos Santos">
+    <meta name="description"  content="My Blog">
+    <meta name="robot" content="5">
+    <title>NewsPlanet</title>
+    <meta name="robot" content="index">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-ico" href="/src/imgs/logo.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../src/css/artigo.css">
+    <script type="module" src="../src/script/btns.js"></script>
+</head>
+<body>
+    <header>
+        <i id="menuBtn" class="btnMenu fa-solid fa-bars"></i>
+        <a class="logotipo" href="../index.html">
+            <img src="../src/imgs/logo.png" alt="imagem da marca de logo">
+            <p>NewsPlanet</p>
+        </a>
+
+        <div class="right">
+            
+            <a href="../AboutUs.html">Sobre Nós</a>
+            
+            <div class="searchBar">
+                <label for="search"><i class="fa fa-search"></i></label>
+                <input type="text" name="search" placeholder="matérias">
+            </div>
+            <i id="btnTheme" class="fa-solid fa-sun"></i>
+    
+        </div>
+    </header>
+
+    <main>
+
+        <div id="top">
+            <h1>10 motivos pelos quais Java é melhor que Python</h1>
+            <div class="authors">
+                <div class="images">
+                    <img src="../src/imgs/authors/1.png" alt="">
+                    <img src="../src/imgs/authors/2.png" alt="">
+                </div>
+                <p class="name">Henzo, Minecraft</p>
+                <p class="time">
+                    <i class="fa-solid fa-clock"></i>
+                    14/08/2026
+                </p>
+            </div>
+        </div>
+        <img src="../src/imgs/artigos/2.jpg" alt="">
+<article class="news-article">
+
+    <blockquote>
+        Atenção, programadores Python: esta matéria contém opiniões
+        extremamente duvidosas e nenhuma intenção de ser imparcial.
+    </blockquote>
+
+<h2>O problema que assombra desenvolvedores há gerações</h2>
+
+<p>Centralizar uma div parece uma tarefa simples. Você cria uma div, coloca algum conteúdo dentro e pensa: "é só centralizar". Cinco minutos depois, você está pesquisando no Google, abrindo o DevTools e questionando todas as decisões que tomou desde que começou a programar.</p>
+
+<h2>Primeiro passo: fingir que você sabe o que está fazendo</h2>
+
+<p>Antes de tudo, respire fundo. Você provavelmente já tentou colocar <code>margin: auto</code> e ficou esperando a div aparecer magicamente no centro da tela. Isso funciona... mas apenas em determinadas circunstâncias, porque CSS aparentemente possui personalidade própria.</p>
+
+<h2>O método moderno: Flexbox</h2>
+
+<p>A solução mais recomendada é transformar o elemento pai em um container flexível. Com <code>display: flex</code>, <code>justify-content: center</code> e <code>align-items: center</code>, você finalmente consegue fazer algo que deveria ter sido simples desde o começo.</p>
+
+<h2>Mas por que existem dois "center"?</h2>
+
+<p>Porque seria fácil demais se existisse apenas um. <code>justify-content</code> controla o alinhamento no eixo principal, enquanto <code>align-items</code> controla o eixo transversal. Dependendo de como o Flexbox está configurado, isso normalmente significa horizontal e vertical.</p>
+
+<h2>Quando nada funciona</h2>
+
+<p>Se a div ainda não estiver centralizada, verifique o elemento pai. Talvez ele não tenha altura suficiente. Talvez você tenha colocado o CSS no elemento errado. Talvez exista um <code>margin</code> misterioso em algum lugar. E, em casos extremos, talvez seja melhor fechar o computador e voltar amanhã.</p>
+
+<h2>Conclusão</h2>
+
+<p>Centralizar uma div é uma jornada de autoconhecimento. Você começa querendo apenas alinhar um quadrado e termina sabendo mais sobre Flexbox do que gostaria. Mas lembre-se: se funcionar, não mexa. E se alguém perguntar por quê, responda apenas: "Flexbox".</p>
+</article>
+
+    </main>
+</body>
+
+<nav class="navBar" id="navBar">
+    <h1>Principais Artigos</h1>
+
+    <div class="btn id1">
+        <img src="../src/imgs/logo.png" alt="">
+        <p>Minecraft</p>
+    </div>
+    <div class="btn id2">
+        <img src="../src/imgs/logo.png" alt="">
+        <p>Minecraft</p>
+    </div>
+    <div class="btn id3">
+        <img src="../src/imgs/logo.png" alt="">
+        <p>Minecraft</p>
+    </div>
+    <div class="btn id4">
+        <img src="../src/imgs/logo.png" alt="">
+        <p>Minecraft</p>
+    </div>
+</nav>
+
+<footer>
+    <div class="top">
+        <img src="../src/imgs/logo.ico" alt="logo">
+        <div class="right">
+            <h1 class="title">NewsPlanet</h1>
+            <nav class="links">
+                <div style="display: grid;">
+                    <a href="">Sobre Nós</a>
+                </div>
+                <div style="display: grid;">
+                    <a href="index.html#newsLetter">Contato</a>
+                </div>
+                <div style="display: grid;">
+                    <a href="">Termos de Serviço</a>
+                </div>
+                <div style="display: grid;">
+                    <a href="">Política de Privacidade</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="bottom">
+        <p>© Copyright NewsPlanet</p>
+        <a href="#topper">Voltar <i class="fa-solid fa-circle-arrow-up"></i></a>
+    </div>
+
+</footer>
+
+</html>
+

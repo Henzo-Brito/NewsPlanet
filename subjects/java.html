@@ -43,8 +43,8 @@
             <h1>10 motivos pelos quais Java é melhor que Python</h1>
             <div class="authors">
                 <div class="images">
-                    <img src="./src/imgs/authors/1.png" alt="">
-                    <img src="./src/imgs/authors/2.png" alt="">
+                    <img src="../src/imgs/authors/1.png" alt="">
+                    <img src="../src/imgs/authors/2.png" alt="">
                 </div>
                 <p class="name">Henzo, Minecraft</p>
                 <p class="time">
@@ -56,78 +56,421 @@
         <img src="../src/imgs/artigos/1.png" alt="">
 <article class="news-article">
 
-    <p>
-        <strong>Atenção, programadores Python:</strong> esta matéria contém opiniões
+    <blockquote>
+        Atenção, programadores Python: esta matéria contém opiniões
         extremamente duvidosas e nenhuma intenção de ser imparcial.
-    </p>
+    </blockquote>
 
-    <h2>1. Java faz você escrever muito</h2>
-    <p>
-        Enquanto Python resolve tudo em poucas linhas, Java acredita que escrever
-        40 linhas para fazer algo simples é sinal de comprometimento.
-    </p>
+     <h2>1. Melhor desempenho em aplicações de alto processamento</h2>
 
-    <h2>2. Java tem nome de café</h2>
-    <p>
-        Python é uma cobra. Java é café. Só isso já deveria encerrar a discussão.
-    </p>
+            <p>
+                Uma das principais vantagens de Java sobre Python está no desempenho.
+            </p>
 
-    <h2>3. Java parece mais sério</h2>
-    <p>
-        Abra um projeto Java com 47 pastas e você automaticamente parece estar
-        trabalhando na NASA. Abra Python e parece que você está fazendo uma calculadora.
-    </p>
+            <p>
+                Java utiliza a <strong>Java Virtual Machine (JVM)</strong> e conta com compilação
+                Just-In-Time (JIT), que transforma partes do código em instruções de máquina
+                durante a execução. Isso permite que aplicações Java tenham desempenho bastante
+                próximo ao de linguagens tradicionalmente compiladas, dependendo do cenário.
+            </p>
 
-    <h2>4. Java não deixa você esquecer o <code>;</code></h2>
-    <p>
-        O ponto e vírgula está sempre ali, cuidando de você. Python simplesmente
-        abandonou essa responsabilidade.
-    </p>
+            <p>
+                Python, por outro lado, especialmente em sua implementação mais comum, o CPython,
+                executa grande parte do código por meio de um interpretador e possui limitações
+                específicas relacionadas ao Global Interpreter Lock (GIL) em determinados cenários
+                de execução concorrente.
+            </p>
 
-    <h2>5. Java gosta de complicar</h2>
-    <p>
-        Você queria fazer uma coisa simples? Java encontrou uma maneira de transformar
-        isso em um projeto de três meses.
-    </p>
+            <p>
+                Isso pode fazer diferença em aplicações que realizam muitas operações de CPU,
+                como processamento intensivo, sistemas financeiros, mecanismos de processamento
+                de dados e aplicações empresariais de grande escala.
+            </p>
 
-    <h2>6. Python é fácil demais</h2>
-    <p>
-        Você escreve algumas linhas e tudo funciona. Onde está a emoção? Java acredita
-        que todo programador precisa sofrer um pouquinho.
-    </p>
+            <p>
+                <strong>Vantagem: Java</strong>, especialmente quando o gargalo está no processamento de CPU.
+            </p>
+        </section>
 
-    <h2>7. Java sobrevive a tudo</h2>
-    <p>
-        Java já foi declarado morto tantas vezes que provavelmente já está acostumado.
-        Enquanto isso, ele continua aparecendo em projetos por aí.
-    </p>
+        <section>
+            <h2>2. Tipagem estática ajuda a encontrar erros mais cedo</h2>
 
-    <h2>8. Java tem <code>public static void main</code></h2>
-    <p>
-        Você pode até não saber o que significa, mas quando vê isso, imediatamente
-        sente que está programando algo importante.
-    </p>
+            <p>
+                Java é uma linguagem de <strong>tipagem estática</strong>. Isso significa que os
+                tipos das variáveis são verificados durante a compilação.
+            </p>
 
-    <h2>9. Java não perdoa</h2>
-    <p>
-        Esqueceu alguma coisa? Java avisa. Escreveu errado? Java avisa. Respirou perto
-        do código? Java provavelmente também avisa.
-    </p>
+            <pre><code>int idade = 30;
+String nome = "Carlos";</code></pre>
 
-    <h2>10. Porque alguém precisava ganhar</h2>
-    <p>
-        No fim das contas, Python é ótimo. Java também. Mas nossa redação precisava
-        escolher um vencedor e, por algum motivo completamente inexplicável...
-    </p>
+            <p>
+                Se o programador tentar realizar uma operação incompatível com o tipo definido,
+                o compilador pode identificar o problema antes que a aplicação seja executada.
+            </p>
 
-    <h2>☕ Java venceu. 🏆</h2>
+            <p>
+                Python utiliza tipagem dinâmica:
+            </p>
 
-    <p>
-        <em>
-            Os programadores Python foram convidados a apresentar recurso,
-            mas ainda estão procurando onde colocar o <code>;</code>.
-        </em>
-    </p>
+            <pre><code>idade = 30
+nome = "Carlos"</code></pre>
+
+            <p>
+                Essa flexibilidade é excelente para desenvolvimento rápido, mas determinados
+                erros só aparecem durante a execução.
+            </p>
+
+            <p>
+                Em projetos grandes, a tipagem estática pode funcionar como uma camada adicional
+                de segurança. Ela facilita refatorações, melhora ferramentas de análise de código
+                e ajuda equipes a compreenderem os contratos entre diferentes partes de um sistema.
+            </p>
+
+            <p>
+                <strong>Vantagem: Java</strong>, principalmente em projetos grandes e de longa duração.
+            </p>
+        </section>
+
+        <section>
+            <h2>3. Mais previsibilidade em projetos corporativos</h2>
+
+            <p>
+                Java possui uma longa história no desenvolvimento empresarial.
+            </p>
+
+            <p>
+                Bancos, seguradoras, empresas de telecomunicações, varejistas e grandes organizações
+                utilizam Java há décadas. Esse histórico contribuiu para a criação de uma enorme
+                quantidade de bibliotecas, frameworks, padrões arquiteturais e ferramentas voltadas
+                para sistemas corporativos.
+            </p>
+
+            <p>
+                Frameworks como Spring e tecnologias do ecossistema Jakarta EE permitem construir
+                aplicações complexas com estruturas bem definidas.
+            </p>
+
+            <p>
+                Python também é extremamente utilizado em empresas, mas seu ecossistema é
+                particularmente forte em áreas como dados, automação, ciência de dados e inteligência artificial.
+            </p>
+
+            <p>
+                Para uma organização que precisa manter um sistema por muitos anos e com equipes
+                numerosas, a estrutura e a padronização do ecossistema Java podem ser grandes vantagens.
+            </p>
+
+            <p>
+                <strong>Vantagem: Java</strong>, especialmente em sistemas empresariais de grande porte.
+            </p>
+        </section>
+
+        <section>
+            <h2>4. Excelente suporte à programação concorrente</h2>
+
+            <p>
+                Java possui recursos maduros para trabalhar com concorrência e paralelismo.
+            </p>
+
+            <p>
+                A linguagem oferece threads, executores, ferramentas de sincronização e diversas
+                abstrações para desenvolver aplicações que executam múltiplas tarefas simultaneamente.
+                Versões modernas do Java também introduziram recursos importantes, como
+                <strong>virtual threads</strong>, que simplificam a construção de aplicações altamente
+                concorrentes em determinados cenários.
+            </p>
+
+            <p>
+                Python também possui mecanismos de concorrência, como threads, processos e
+                programação assíncrona. Entretanto, aplicações fortemente dependentes de processamento
+                paralelo em CPU podem enfrentar limitações específicas do CPython.
+            </p>
+
+            <p>
+                Em sistemas que precisam lidar com milhares ou milhões de operações concorrentes,
+                o modelo de execução escolhido pode ter grande impacto.
+            </p>
+
+            <p>
+                <strong>Vantagem: Java</strong>, principalmente em sistemas concorrentes e aplicações de servidor.
+            </p>
+        </section>
+
+        <section>
+            <h2>5. Um ecossistema extremamente maduro</h2>
+
+            <p>
+                Java possui um dos ecossistemas mais consolidados da indústria.
+            </p>
+
+            <p>
+                Existem ferramentas para praticamente todas as necessidades do desenvolvimento
+                profissional: construção de projetos, testes automatizados, monitoramento,
+                segurança, integração contínua, desenvolvimento web, microsserviços, aplicações
+                distribuídas e muito mais.
+            </p>
+
+            <p>
+                Ferramentas como Maven e Gradle são amplamente utilizadas para gerenciamento
+                e automação de projetos.
+            </p>
+
+            <p>
+                Além disso, a JVM permite que linguagens diferentes compartilhem parte desse ecossistema.
+                Kotlin, Scala e outras linguagens podem executar na JVM e interagir com bibliotecas Java.
+            </p>
+
+            <p>
+                Isso cria uma plataforma bastante ampla para organizações que desejam construir
+                sistemas heterogêneos sem abandonar a infraestrutura existente.
+            </p>
+
+            <p>
+                <strong>Vantagem: Java</strong>, graças à maturidade e à amplitude de seu ecossistema.
+            </p>
+        </section>
+
+        <section>
+            <h2>6. Maior rigor pode facilitar a manutenção de grandes sistemas</h2>
+
+            <p>
+                Existe uma característica de Java que alguns desenvolvedores consideram uma
+                desvantagem: a linguagem exige mais código e costuma ser mais explícita do que Python.
+            </p>
+
+            <p>
+                Paradoxalmente, isso também pode ser uma vantagem.
+            </p>
+
+            <p>
+                Em uma aplicação pequena, escrever mais código pode representar apenas trabalho
+                adicional. Em um sistema com centenas de milhares ou milhões de linhas, porém,
+                estruturas explícitas, interfaces, tipos e contratos bem definidos podem facilitar
+                a compreensão e a manutenção.
+            </p>
+
+            <p>
+                Imagine uma equipe de dezenas de desenvolvedores trabalhando no mesmo sistema
+                durante vários anos. A clareza estrutural proporcionada pela tipagem e pelas
+                convenções do ecossistema Java pode reduzir ambiguidades.
+            </p>
+
+            <p>
+                Python permite escrever soluções muito concisas, mas essa flexibilidade exige
+                disciplina para evitar que projetos grandes se tornem difíceis de compreender.
+            </p>
+
+            <p>
+                <strong>Vantagem: Java</strong>, quando organização e manutenção de longo prazo são prioridades.
+            </p>
+        </section>
+
+        <section>
+            <h2>7. Ferramentas de desenvolvimento muito robustas</h2>
+
+            <p>
+                O ecossistema Java oferece excelentes ambientes de desenvolvimento integrado, ou IDEs.
+            </p>
+
+            <p>
+                Ferramentas como IntelliJ IDEA e Eclipse fornecem recursos avançados para:
+            </p>
+
+            <ul>
+                <li>Refatoração;</li>
+                <li>Navegação pelo código;</li>
+                <li>Análise estática;</li>
+                <li>Depuração;</li>
+                <li>Geração de código;</li>
+                <li>Detecção de problemas;</li>
+                <li>Gerenciamento de dependências;</li>
+                <li>Execução de testes.</li>
+            </ul>
+
+            <p>
+                A tipagem estática também permite que essas ferramentas compreendam profundamente
+                a estrutura de uma aplicação.
+            </p>
+
+            <p>
+                Python também possui excelentes ferramentas de desenvolvimento, mas o conjunto de
+                informações disponíveis para análise estática pode ser diferente devido à natureza
+                dinâmica da linguagem.
+            </p>
+
+            <p>
+                Em grandes bases de código, ferramentas de análise e refatoração são especialmente importantes.
+            </p>
+
+            <p>
+                <strong>Vantagem: Java</strong>, sobretudo para equipes que trabalham com grandes aplicações.
+            </p>
+        </section>
+
+        <section>
+            <h2>8. Portabilidade e estabilidade da JVM</h2>
+
+            <p>
+                Uma das ideias mais famosas associadas ao Java é:
+                <strong>"Write once, run anywhere."</strong>
+            </p>
+
+            <p>
+                A proposta é que o código Java seja compilado para bytecode executado pela JVM.
+                Como a JVM está disponível para diferentes sistemas operacionais e arquiteturas,
+                uma mesma aplicação pode ser executada em ambientes distintos com poucas ou nenhuma
+                alteração no código-fonte.
+            </p>
+
+            <p>
+                Python também é multiplataforma, mas aplicações Python podem depender de versões
+                específicas do interpretador, pacotes nativos, bibliotecas do sistema operacional
+                e configurações do ambiente.
+            </p>
+
+            <p>
+                A JVM fornece uma camada de abstração bastante madura entre a aplicação e o sistema operacional.
+            </p>
+
+            <p>
+                Para organizações que precisam distribuir aplicações em diferentes ambientes,
+                essa característica continua sendo relevante.
+            </p>
+
+            <p>
+                <strong>Vantagem: Java</strong>, principalmente em ambientes corporativos heterogêneos.
+            </p>
+        </section>
+
+        <section>
+            <h2>9. Forte presença em sistemas críticos</h2>
+
+            <p>
+                Java é utilizado em sistemas nos quais confiabilidade, previsibilidade e manutenção
+                são extremamente importantes.
+            </p>
+
+            <p>
+                Isso inclui aplicações financeiras, plataformas de comércio eletrônico, sistemas
+                de telecomunicações, backends de grandes empresas e diversos tipos de sistemas distribuídos.
+            </p>
+
+            <p>
+                A linguagem possui recursos maduros de gerenciamento de memória, tratamento de
+                exceções, monitoramento e ferramentas de diagnóstico.
+            </p>
+
+            <p>
+                Isso não significa que Python seja inadequado para sistemas críticos. A escolha da
+                tecnologia depende muito mais da arquitetura, da equipe e dos requisitos do projeto
+                do que da linguagem isoladamente.
+            </p>
+
+            <p>
+                Ainda assim, Java tem uma reputação particularmente forte em ambientes nos quais
+                a aplicação precisa permanecer funcionando e evoluindo por muitos anos.
+            </p>
+
+            <p>
+                <strong>Vantagem: Java</strong>, especialmente em aplicações empresariais de missão crítica.
+            </p>
+        </section>
+
+        <section>
+            <h2>10. Java é uma escolha estratégica para projetos de longo prazo</h2>
+
+            <p>
+                Talvez a maior vantagem de Java seja sua combinação de maturidade, desempenho,
+                estabilidade e disponibilidade de profissionais.
+            </p>
+
+            <p>
+                Uma tecnologia empresarial não precisa apenas funcionar hoje. Ela precisa continuar
+                sendo suportada, atualizada e compreendida daqui a cinco, dez ou quinze anos.
+            </p>
+
+            <p>
+                Java possui uma comunidade madura, um ciclo contínuo de evolução e uma enorme
+                quantidade de código existente no mercado.
+            </p>
+
+            <p>
+                Isso reduz o risco tecnológico de organizações que precisam manter sistemas por
+                períodos prolongados.
+            </p>
+
+            <p>
+                Python também possui uma comunidade gigantesca e perspectivas muito fortes,
+                especialmente graças à inteligência artificial, ciência de dados e automação.
+                Portanto, não se trata de dizer que Python está desaparecendo.
+            </p>
+
+            <p>
+                A questão é que <strong>Java continua sendo uma escolha extremamente sólida quando
+                o objetivo é construir software empresarial duradouro e escalável</strong>.
+            </p>
+        </section>
+
+        <section>
+            <h2>Java ou Python: qual escolher?</h2>
+
+            <p>
+                A resposta depende do problema.
+            </p>
+
+            <p>Python pode ser a melhor opção para:</p>
+
+            <ul>
+                <li>Inteligência artificial;</li>
+                <li>Ciência de dados;</li>
+                <li>Machine learning;</li>
+                <li>Automação;</li>
+                <li>Scripts;</li>
+                <li>Prototipagem rápida;</li>
+                <li>Desenvolvimento em que a produtividade inicial é prioridade.</li>
+            </ul>
+
+            <p>Java pode ser especialmente interessante para:</p>
+
+            <ul>
+                <li>Sistemas corporativos;</li>
+                <li>Aplicações de grande escala;</li>
+                <li>Backends robustos;</li>
+                <li>Sistemas distribuídos;</li>
+                <li>Aplicações com alta concorrência;</li>
+                <li>Projetos de longa duração;</li>
+                <li>Ambientes nos quais tipagem estática e ferramentas de engenharia são importantes.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Conclusão</h2>
+
+            <p>
+                Python conquistou enorme popularidade por tornar a programação mais acessível e produtiva.
+                Java, por sua vez, construiu sua reputação com base em desempenho, portabilidade,
+                estabilidade e capacidade de sustentar sistemas empresariais de grande porte.
+            </p>
+
+            <p>
+                Os dez pontos analisados mostram por que Java continua relevante mesmo em um mercado
+                no qual Python cresce rapidamente.
+            </p>
+
+            <p>
+                A escolha ideal não deve ser baseada apenas na popularidade da linguagem, mas nos
+                requisitos do projeto. Para um pequeno script de automação, Python pode ser a escolha
+                óbvia. Para uma plataforma empresarial que precisará atender milhões de usuários e
+                ser mantida por muitos anos, Java pode oferecer vantagens decisivas.
+            </p>
+
+            <p>
+                <strong>
+                    No fim, a melhor linguagem é aquela que resolve o problema com o equilíbrio
+                    adequado entre desempenho, produtividade, manutenção e custo.
+                </strong>
+                E, em muitos desses cenários, Java continua sendo uma das melhores opções disponíveis.
+            </p>
 
 </article>
 
@@ -162,16 +505,16 @@
             <h1 class="title">NewsPlanet</h1>
             <nav class="links">
                 <div style="display: grid;">
-                    <a href="">Sobre Nós</a>
+                    <a href="../AboutUs.html">Sobre Nós</a>
                 </div>
                 <div style="display: grid;">
-                    <a href="index.html#newsLetter">Contato</a>
+                    <a href="../index.html#newsletter">Contato</a>
                 </div>
                 <div style="display: grid;">
-                    <a href="">Termos de Serviço</a>
+                    <a href="../termos.html">Termos de Serviço</a>
                 </div>
                 <div style="display: grid;">
-                    <a href="">Política de Privacidade</a>
+                    <a href="../politic.html">Política de Privacidade</a>
                 </div>
             </nav>
         </div>

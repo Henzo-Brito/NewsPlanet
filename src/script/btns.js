@@ -49,3 +49,9 @@ copyEmail.addEventListener("click",()=>{
             alert("Não foi possível copiar o e-mail.");
         });
 })
+
+const share = document.getElementById("btn_share");
+
+share.addEventListener("click", ()=>{
+    
+})
