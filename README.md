@@ -14,11 +14,11 @@ O **NewsPlanet** é uma plataforma desenvolvida para reunir e apresentar as prin
 
 ## ✨ Funcionalidades
 
-* 📰 Visualização de notícias de tecnologia
-* 🔎 Navegação simples e intuitiva
-* 📱 Interface responsiva
-* ⚡ Experiência rápida e objetiva
-* 🌐 Notícias organizadas para facilitar a navegação
+- 📰 Visualização de notícias de tecnologia
+- 🔎 Navegação simples e intuitiva
+- 📱 Interface responsiva
+- ⚡ Experiência rápida e objetiva
+- 🌐 Notícias organizadas para facilitar a navegação
 
 ---
 
@@ -26,10 +26,10 @@ O **NewsPlanet** é uma plataforma desenvolvida para reunir e apresentar as prin
 
 O projeto foi desenvolvido utilizando:
 
-* **HTML5** — estrutura da aplicação
-* **CSS3** — estilização e responsividade
-* **JavaScript** — interações e funcionalidades
-* **Git & GitHub** — versionamento e hospedagem
+- **HTML5** — estrutura da aplicação
+- **CSS3** — estilização e responsividade
+- **JavaScript** — interações e funcionalidades
+- **Git & GitHub** — versionamento e hospedagem
 
 ---
 

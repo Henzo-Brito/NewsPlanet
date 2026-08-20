@@ -1,94 +1,146 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/css/style.css">
-    <meta name="keywords"  content="HTML, CSS, JavaScript">
-    <meta name="author"  content="Henzo Brito dos Santos">
-    <meta name="description"  content="My Blog">
-    <meta name="robot" content="5">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/others.css" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Henzo Brito dos Santos" />
+    <meta name="description" content="My Blog" />
+    <meta name="robot" content="5" />
     <title>NewsPlanet</title>
-    <meta name="robot" content="index">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-ico" href="/src/imgs/logo.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="robot" content="index" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-ico" href="/src/imgs/logo.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script type="module" src="./src/script/btns.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <i id="menuBtn" class="btnMenu fa-solid fa-bars"></i>
-        <a class="logotipo" href="#topper">
-            <img src="./src/imgs/logo.png" alt="imagem da marca de logo">
-            <p>NewsPlanet</p>
-        </a>
+      <i id="menuBtn" class="btnMenu fa-solid fa-bars"></i>
+      <a class="logotipo" href="./index.html">
+        <img src="./src/imgs/logo.png" alt="imagem da marca de logo" />
+        <p>NewsPlanet</p>
+      </a>
 
-        <div class="right">
-            
-            <p>Sobre Nós</p>
-            
-            <div class="searchBar">
-                <label for="search"><i class="fa fa-search"></i></label>
-                <input type="text" name="search" placeholder="matérias">
-            </div>
-            <i id="btnTheme" class="fa-solid fa-sun"></i>
-    
+      <div class="right">
+        <p>Sobre Nós</p>
+
+        <div class="searchBar">
+          <label for="search"><i class="fa fa-search"></i></label>
+          <input type="text" name="search" placeholder="matérias" />
         </div>
+        <i id="btnTheme" class="fa-solid fa-sun"></i>
+      </div>
     </header>
 
     <main>
-
+      <section>
+        <h1>Sobre Nós</h1>
+        <p>
+          O <strong>NewsPlanet</strong> é uma plataforma criada para reunir e
+          apresentar notícias e novidades do mundo da tecnologia de forma
+          simples, organizada e acessível.
+        </p>
+        <h2>🚀 Nossa proposta</h2>
+        <p>
+          Vivemos em um mundo onde a tecnologia está presente em praticamente
+          todos os aspectos da nossa vida. O NewsPlanet nasceu com o objetivo de
+          tornar mais fácil acompanhar as principais novidades desse universo.
+        </p>
+        <h2>🎯 Nosso objetivo</h2>
+        <p>
+          Nosso objetivo é proporcionar uma experiência rápida, intuitiva e
+          agradável para quem deseja acompanhar conteúdos relacionados à
+          tecnologia.
+        </p>
+        <h2>💻 O projeto</h2>
+        <p>
+          O NewsPlanet foi desenvolvido como um projeto de estudo e prática de
+          desenvolvimento web, utilizando tecnologias como HTML5, CSS3 e
+          JavaScript.
+        </p>
+        <h2>👨‍💻 Desenvolvedor</h2>
+        <p>
+          O projeto foi desenvolvido por <strong>Henzo Brito</strong>, como
+          parte de seus estudos e experiências na área de desenvolvimento de
+          sistemas.
+        </p>
+      </section>
     </main>
-</body>
+  </body>
 
-<nav class="navBar" id="navBar">
+  <nav class="navBar" id="navBar">
     <h1>Principais Artigos</h1>
 
-    <div class="btn id1">
-        <img src="./src/imgs/logo.png" alt="">
-        <p>Minecraft</p>
-    </div>
-    <div class="btn id2">
-        <img src="./src/imgs/logo.png" alt="">
-        <p>Minecraft</p>
-    </div>
-    <div class="btn id3">
-        <img src="./src/imgs/logo.png" alt="">
-        <p>Minecraft</p>
-    </div>
-    <div class="btn id4">
-        <img src="./src/imgs/logo.png" alt="">
-        <p>Minecraft</p>
-    </div>
-</nav>
+    <a href="./index.html" class="btn id3">
+      <i class="fa-solid fa-house"></i>
+      <p>Início</p>
+    </a>
 
-<footer>
+    <a href="./subjects/div.html" class="btn id1">
+      <i class="fa-solid fa-align-center"></i>
+      <p>Como centralizar uma div</p>
+    </a>
+
+    <a href="./subjects/java.html" class="btn id2">
+      <i class="fa-solid fa-mug-hot"></i>
+      <p>10 Motivos pelos quais Java é melhor que Python</p>
+    </a>
+
+    <a href="./subjects/gaybriel.html" class="btn id4">
+      <i class="fa-solid fa-user-tie"></i>
+      <p>
+        homem perde cabelo após começar a dar aula no Proa, e começa a usar
+        Peruca
+      </p>
+    </a>
+
+    <a href="./subjects/tripleT.html" class="btn id4">
+      <i class="fa-solid fa-skull-crossbones"></i>
+      <p>Triple T é encontrado sem vida em sua casa</p>
+    </a>
+
+    <a href="./subjects/linux.html" class="btn id4">
+      <i class="fa-brands fa-linux"></i>
+      <p>Usuário Instala Linux para "ter mais liberdade"</p>
+    </a>
+  </nav>
+
+  <footer>
     <div class="top">
-        <img src="./src/imgs/logo.ico" alt="logo">
-        <div class="right">
-            <h1 class="title">NewsPlanet</h1>
-            <nav class="links">
-                <div style="display: grid;">
-                    <a href="./AboutUs.html">Sobre Nós</a>
-                </div>
-                <div style="display: grid;">
-                    <a href="./index.html#newsletter">Contato</a>
-                </div>
-                <div style="display: grid;">
-                    <a href="./termos.html">Termos de Serviço</a>
-                </div>
-                <div style="display: grid;">
-                    <a href="./politic.html">Política de Privacidade</a>
-                </div>
-            </nav>
-        </div>
+      <img src="./src/imgs/logo.ico" alt="logo" />
+      <div class="right">
+        <h1 class="title">NewsPlanet</h1>
+        <nav class="links">
+          <div style="display: grid">
+            <a href="./AboutUs.html">Sobre Nós</a>
+          </div>
+          <div style="display: grid">
+            <a href="./index.html#newsletter">Contato</a>
+          </div>
+          <div style="display: grid">
+            <a href="./termos.html">Termos de Serviço</a>
+          </div>
+          <div style="display: grid">
+            <a href="./politic.html">Política de Privacidade</a>
+          </div>
+        </nav>
+      </div>
     </div>
     <div class="bottom">
-        <p>© Copyright NewsPlanet</p>
-        <a href="#topper">Voltar <i class="fa-solid fa-circle-arrow-up"></i></a>
+      <p>© Copyright NewsPlanet</p>
+      <a href="#topper">Voltar <i class="fa-solid fa-circle-arrow-up"></i></a>
     </div>
-
-</footer>
-
+  </footer>
 </html>
-

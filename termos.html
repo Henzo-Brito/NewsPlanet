@@ -1,94 +1,162 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/css/style.css">
-    <meta name="keywords"  content="HTML, CSS, JavaScript">
-    <meta name="author"  content="Henzo Brito dos Santos">
-    <meta name="description"  content="My Blog">
-    <meta name="robot" content="5">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/others.css" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Henzo Brito dos Santos" />
+    <meta name="description" content="My Blog" />
+    <meta name="robot" content="5" />
     <title>NewsPlanet</title>
-    <meta name="robot" content="index">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-ico" href="/src/imgs/logo.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="robot" content="index" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-ico" href="/src/imgs/logo.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script type="module" src="./src/script/btns.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <i id="menuBtn" class="btnMenu fa-solid fa-bars"></i>
-        <a class="logotipo" href="#topper">
-            <img src="./src/imgs/logo.png" alt="imagem da marca de logo">
-            <p>NewsPlanet</p>
-        </a>
+      <i id="menuBtn" class="btnMenu fa-solid fa-bars"></i>
+      <a class="logotipo" href="./index.html">
+        <img src="./src/imgs/logo.png" alt="imagem da marca de logo" />
+        <p>NewsPlanet</p>
+      </a>
 
-        <div class="right">
-            
-            <p>Sobre Nós</p>
-            
-            <div class="searchBar">
-                <label for="search"><i class="fa fa-search"></i></label>
-                <input type="text" name="search" placeholder="matérias">
-            </div>
-            <i id="btnTheme" class="fa-solid fa-sun"></i>
-    
+      <div class="right">
+        <a href="./AboutUs.html">Sobre Nós</a>
+
+        <div class="searchBar">
+          <label for="search"><i class="fa fa-search"></i></label>
+          <input type="text" name="search" placeholder="matérias" />
         </div>
+        <i id="btnTheme" class="fa-solid fa-sun"></i>
+      </div>
     </header>
 
     <main>
-        
+      <section>
+        <h1>Termos de Serviço</h1>
+        <p>
+          Ao acessar e utilizar o <strong>NewsPlanet</strong>, você concorda com
+          os presentes Termos de Serviço. Caso não concorde com algum destes
+          termos, recomendamos que não utilize a plataforma.
+        </p>
+        <h2>1. Sobre o serviço</h2>
+        <p>
+          O NewsPlanet é um projeto voltado à apresentação e organização de
+          conteúdos e notícias relacionadas ao universo da tecnologia.
+        </p>
+        <h2>2. Uso da plataforma</h2>
+        <p>
+          A plataforma deve ser utilizada de maneira responsável e de acordo com
+          a legislação aplicável. Não é permitido utilizar o site para
+          atividades ilícitas, prejudiciais ou que possam comprometer seu
+          funcionamento.
+        </p>
+        <h2>3. Conteúdo</h2>
+        <p>
+          Os conteúdos apresentados no NewsPlanet podem ter como origem
+          diferentes fontes. O projeto busca organizar as informações de maneira
+          clara, mas não garante que todo conteúdo esteja livre de erros ou
+          totalmente atualizado.
+        </p>
+        <h2>4. Links externos</h2>
+        <p>
+          O site pode apresentar links para páginas externas. O NewsPlanet não
+          possui controle sobre o conteúdo, disponibilidade ou políticas desses
+          sites.
+        </p>
+        <h2>5. Disponibilidade</h2>
+        <p>
+          Embora sejam realizados esforços para manter a plataforma disponível,
+          não é garantido que o serviço permanecerá acessível continuamente ou
+          sem interrupções.
+        </p>
+        <h2>6. Alterações</h2>
+        <p>
+          Estes Termos de Serviço podem ser modificados ou atualizados sempre
+          que necessário. A versão mais recente estará disponível nesta página.
+        </p>
+        <h2>7. Contato</h2>
+        <p>
+          Em caso de dúvidas sobre estes termos, entre em contato com o
+          responsável pelo projeto.
+        </p>
+      </section>
     </main>
-</body>
+  </body>
 
-<nav class="navBar" id="navBar">
+  <nav class="navBar" id="navBar">
     <h1>Principais Artigos</h1>
 
-    <div class="btn id1">
-        <img src="./src/imgs/logo.png" alt="">
-        <p>Minecraft</p>
-    </div>
-    <div class="btn id2">
-        <img src="./src/imgs/logo.png" alt="">
-        <p>Minecraft</p>
-    </div>
-    <div class="btn id3">
-        <img src="./src/imgs/logo.png" alt="">
-        <p>Minecraft</p>
-    </div>
-    <div class="btn id4">
-        <img src="./src/imgs/logo.png" alt="">
-        <p>Minecraft</p>
-    </div>
-</nav>
+    <a href="./index.html" class="btn id3">
+      <i class="fa-solid fa-house"></i>
+      <p>Início</p>
+    </a>
 
-<footer>
+    <a href="./subjects/div.html" class="btn id1">
+      <i class="fa-solid fa-align-center"></i>
+      <p>Como centralizar uma div</p>
+    </a>
+
+    <a href="./subjects/java.html" class="btn id2">
+      <i class="fa-solid fa-mug-hot"></i>
+      <p>10 Motivos pelos quais Java é melhor que Python</p>
+    </a>
+
+    <a href="./subjects/gaybriel.html" class="btn id4">
+      <i class="fa-solid fa-user-tie"></i>
+      <p>
+        homem perde cabelo após começar a dar aula no Proa, e começa a usar
+        Peruca
+      </p>
+    </a>
+
+    <a href="./subjects/tripleT.html" class="btn id4">
+      <i class="fa-solid fa-skull-crossbones"></i>
+      <p>Triple T é encontrado sem vida em sua casa</p>
+    </a>
+
+    <a href="./subjects/linux.html" class="btn id4">
+      <i class="fa-brands fa-linux"></i>
+      <p>Usuário Instala Linux para "ter mais liberdade"</p>
+    </a>
+  </nav>
+  <footer>
     <div class="top">
-        <img src="./src/imgs/logo.ico" alt="logo">
-        <div class="right">
-            <h1 class="title">NewsPlanet</h1>
-            <nav class="links">
-                <div style="display: grid;">
-                    <a href="./AboutUs.html">Sobre Nós</a>
-                </div>
-                <div style="display: grid;">
-                    <a href="./index.html#newsletter">Contato</a>
-                </div>
-                <div style="display: grid;">
-                    <a href="./termos.html">Termos de Serviço</a>
-                </div>
-                <div style="display: grid;">
-                    <a href="./politic.html">Política de Privacidade</a>
-                </div>
-            </nav>
-        </div>
+      <img src="./src/imgs/logo.ico" alt="logo" />
+      <div class="right">
+        <h1 class="title">NewsPlanet</h1>
+        <nav class="links">
+          <div style="display: grid">
+            <a href="./AboutUs.html">Sobre Nós</a>
+          </div>
+          <div style="display: grid">
+            <a href="./index.html#newsletter">Contato</a>
+          </div>
+          <div style="display: grid">
+            <a href="./termos.html">Termos de Serviço</a>
+          </div>
+          <div style="display: grid">
+            <a href="./politic.html">Política de Privacidade</a>
+          </div>
+        </nav>
+      </div>
     </div>
     <div class="bottom">
-        <p>© Copyright NewsPlanet</p>
-        <a href="#topper">Voltar <i class="fa-solid fa-circle-arrow-up"></i></a>
+      <p>© Copyright NewsPlanet</p>
+      <a href="#topper">Voltar <i class="fa-solid fa-circle-arrow-up"></i></a>
     </div>
-
-</footer>
-
+  </footer>
 </html>
-

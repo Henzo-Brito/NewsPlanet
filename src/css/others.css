@@ -1,0 +1,10 @@
+main{
+  margin-block: calc(clamp(85px, 5dvw, 110px));
+  & p{
+    font-size: clamp(20px, 3dvw, 25px);
+    margin-block: 10px;
+  }
+  & h2{
+    font-size: clamp(25px, 3dvw, 30px);
+  }
+}
